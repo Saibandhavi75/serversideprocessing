@@ -29,7 +29,7 @@ Publish the website in the given URL.
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Calculation</title>
+    <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     
 </head>
@@ -38,82 +38,53 @@ Publish the website in the given URL.
         box-sizing: border-box;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
-
     body{
-        background-color: #F7C4D1;
+    background-color: rgb(183, 44, 238);
     }
 
     .container{
-        width: 1080px;
-        height: 350px;
-        margin-top: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 25px;
-        background-color:#EF6786;
+    width: 1080px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: 10px solid rgba(151, 92, 117, 0);
+    box-shadow: inset 0 0 15px rgb(86, 6, 161);
+    background-color:rgb(188, 133, 240);
     }
     h1{
         text-align: center;
         padding-top: 15px;
     }
-    .content {
-      display: block;
-      width: 100%;
-      background-color: #D71B47;
-      min-height: 350px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      border-radius: 10px;
-      border: 1px solid whitesmoke;
-    }
-    .formelement {
-      text-align: center;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: x-large;
-      font-weight: bold;
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-    .footer {
-      display: block;
-      width: 100%;
-      height: 40px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      background-color: #7B0F28;
-      text-align: center;
-      padding-top: 10px;
-      border-radius: 5px;
-      color: #FCE3E9;
+    .calculate{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right:10px;
+        text-align: center;
+        font-size: 20px;
     }
 </style>
 <body>
     <div class="container">
-        <div class="content">
-        <h1>AREA OF A TRIANGLE</h1>
+        <h1>AREA OF A RECTANGLE</h1>
         <form method="POST">
-            {% csrf_token %}
-            <div class="formelement"> 
-                Base:<input type="text" name="base" value={{b}}></input><br/>
+            <div class="calculate"> 
+                Base:<input type="text" name="base" value=></input><br/>
             </div>
-            <div class="formelement">
-                Height:<input type="text" name="height" value={{h}}></input><br/>
+            <div class="calculate">
+                Height:<input type="text" name="height" value=></input><br/>
             </div>
-            <div class="formelement">
+            <div class="calculate">
                 <input type="submit" value="Calculatearea"></input><br/>
             </div>
-            <div class="formelement">
-                Area:<input type="text" name="area" value={{area}}></input>
+            <div class="calculate">
+                Area:<input type="text" name="area" value=></input>
             </div>
         </form>
-        </div>
-        <div class="footer">
-            Math Calculator Program, Developed by Kaushika Anandharaman.
-        </div>
     </div>
-    
 </body>
-</html>
 
 ## OUTPUT:
 
