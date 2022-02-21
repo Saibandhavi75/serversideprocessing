@@ -92,8 +92,7 @@ Publish the website in the given URL.
     <div class="container">
         <div class="content">
         <h1>AREA OF A TRIANGLE</h1>
-        <form method="POST">
-            {% csrf_token %}
+        
             <div class="formelement"> 
                 Base:<input type="text" name="base" value={{b}}></input><br/>
             </div>
