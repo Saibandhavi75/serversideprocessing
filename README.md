@@ -40,7 +40,7 @@ Publish the website in the given URL.
     }
 
     body{
-        background-color: #999999;
+        background-color: #F7C4D1;
     }
 
     .container{
@@ -50,8 +50,7 @@ Publish the website in the given URL.
         margin-left: auto;
         margin-right: auto;
         border-radius: 25px;
-        background-color: #ff8080;
-      
+        background-color:#EF6786;
     }
     h1{
         text-align: center;
@@ -60,7 +59,7 @@ Publish the website in the given URL.
     .content {
       display: block;
       width: 100%;
-      background-color:  #ff8080;
+      background-color: #D71B47;
       min-height: 350px;
       margin-top: 50px;
       margin-bottom: 50px;
@@ -92,7 +91,8 @@ Publish the website in the given URL.
     <div class="container">
         <div class="content">
         <h1>AREA OF A TRIANGLE</h1>
-        
+        <form method="POST">
+            {% csrf_token %}
             <div class="formelement"> 
                 Base:<input type="text" name="base" value={{b}}></input><br/>
             </div>
