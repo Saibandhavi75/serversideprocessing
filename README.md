@@ -184,6 +184,7 @@ urlpatterns = [
 ]
 ```
 ## OUTPUT:
+![output](https://github.com/Saibandhavi75/serversideprocessing/blob/main/web%20new%201.PNG?raw=true)
 
 
 ## Result:
