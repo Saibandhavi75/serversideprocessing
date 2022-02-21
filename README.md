@@ -51,6 +51,7 @@ Publish the website in the given URL.
         margin-right: auto;
         border-radius: 25px;
         background-color: #ff8080;
+      
     }
     h1{
         text-align: center;
@@ -80,7 +81,7 @@ Publish the website in the given URL.
       height: 40px;
       margin-top: 50px;
       margin-bottom: 50px;
-      background-color:  #ff8080;
+      background-color: #7B0F28;
       text-align: center;
       padding-top: 10px;
       border-radius: 5px;
@@ -91,6 +92,8 @@ Publish the website in the given URL.
     <div class="container">
         <div class="content">
         <h1>AREA OF A TRIANGLE</h1>
+        <form method="POST">
+            {% csrf_token %}
             <div class="formelement"> 
                 Base:<input type="text" name="base" value={{b}}></input><br/>
             </div>
@@ -106,7 +109,7 @@ Publish the website in the given URL.
         </form>
         </div>
         <div class="footer">
-            Math Calculator Program, Developed by Aruru Sai Bandhavi.
+            Math Calculator Program, Developed by Kaushika Anandharaman.
         </div>
     </div>
     
